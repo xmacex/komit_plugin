@@ -2,7 +2,7 @@
 /*
  Plugin Name: Event list of MCC
  Description: Produce a listing of events at KU MCC
- Version: 0.2
+ Version: 0.3
  Author: Mace Ojala
  Licence: GPL3
  Licence URI: https://www.gnu.org/licences/gpl.html
@@ -30,4 +30,4 @@ function listevents() {
     print('</ul>');
 }
 
-add_action('wp_footer', 'listevents');
+add_action('get_sidebar', 'listevents');
